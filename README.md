@@ -62,3 +62,29 @@ The fake tank can be attached to the control data of one of the simulated tanks.
 A control system can then be subbed to the fake tank measurements and really take over.
 
 
+## MQTT soec things
+
+* https://mqtt.org/mqtt-specification/
+* https://sparkplug.eclipse.org/about/faq/
+
+
+## Possible libraries
+
+* https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/protocols/mqtt.html
+* https://github.com/mlesniew/PicoMQTT
+* https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/
+* https://www.hivemq.com/mqtt/public-mqtt-broker/
+* https://www.hivemq.com/mqtt-toolbox/
+* https://github.com/roppert/mosquitto-python-example
+* https://pypi.org/project/paho-mqtt/
+* https://github.com/Yakifo/amqtt
+
+## Broker Ideas
+* https://www.hivemq.com/demos/websocket-client/
+* https://console.hivemq.cloud/
+
+## Data store ideas
+
+* https://www.reduct.store/
+* https://www.harpersystems.dev/pricing
+* https://cloud2.influxdata.com/signup
