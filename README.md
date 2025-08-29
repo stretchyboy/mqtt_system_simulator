@@ -62,7 +62,7 @@ The fake tank can be attached to the control data of one of the simulated tanks.
 A control system can then be subbed to the fake tank measurements and really take over.
 
 
-## MQTT soec things
+## MQTT spec things
 
 * https://mqtt.org/mqtt-specification/
 * https://sparkplug.eclipse.org/about/faq/
