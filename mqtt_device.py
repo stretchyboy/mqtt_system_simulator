@@ -105,7 +105,8 @@ class MQTTClient(mqtt.Client):
         # TODO : what are we subscribing to in sub classes
         self.subscribe("OLP/device/#", qos=1)
         #self.subscribe("$SYS/#", 0)
-
+        
+        # TODO : the controller could be launched with loop forever if the on_message calls update_data and publish_data 
         self.loop_start()
 
 class TankDevice(MQTTClient):
@@ -272,7 +273,6 @@ class TankController(TankDevice):
         # call the heater control function to determine if we need to turn the heater on or off
         heater = self.heater_control(self.temperature)
         print("Heater control returned:", heater, "current state:", self.heater)
-        
         if heater != self.heater:
             self.heater = heater
             self.dirty = True
