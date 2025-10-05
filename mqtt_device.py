@@ -233,41 +233,6 @@ class TankController(TankDevice):
     def light_control(self, brightness: float) -> bool:
         return False    
     
-    '''
-    @temperature.setter
-    def temperature(self, value):
-        temp = float(value)
-        if temp != self.temperature:
-            self.temperature = value
-            self.dirty = True
-    
-    @ambient_temperature.setter
-    def ambient_temperature(self, value):
-        temp = float(value)
-        if temp != self.ambient_temperature:
-            self.ambient_temperature = value
-            self.dirty = True
-
-    @brightness.setter
-    def brightness(self, value):        
-        bright = float(value)
-        if bright != self.brightness:
-            self.brightness = value
-            self.dirty = True
-
-    @humidity.setter
-    def humidity(self, value):        
-        hum = float(value)
-        if hum != self.humidity:
-            self.humidity = value
-            self.dirty = True
-    '''
-    '''
-    def on_message(self, mqttc, obj, msg):
-        print(msg.topic+" "+str(msg.qos)+" "+str(msg.payload))
-        topic_parts = msg.topic.split('/')
-    '''
-
     def update_data(self):
         super(TankController, self).update_data()
         # call the heater control function to determine if we need to turn the heater on or off
